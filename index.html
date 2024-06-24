@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="/index.html">Juan</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portafolio</a></li>
+                    <li><a href="#contacot" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto.jpg" alt="">
+            </div>
+            <h1>Juan Campos</h1>
+            <h2>Diseñador Web</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/juanpablo.campos.148"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/camposjuannn/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/juan-campos-733192276/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/qr/IN53FP4WAGTIF1"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Juan Campos.</span> Soy un diseñador web principiante. Actualmente, estoy estudiando
+                Ingeniería en Informática. A pesar de ser nuevo en el campo, he trabajado en varios proyectos que me han
+                permitido desarrollar habilidades básicas en diseño de interfaces y experiencia de usuario. Mi pasión
+                por la tecnología y la innovación me llevó a estudiar Ingeniería en Informática, con el objetivo de
+                expandir mis conocimientos y mejorar mis capacidades técnicas. </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            14-02-2006
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +54 11 5871-8826
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            juanncamposss@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            6600 Russell, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="cv.html" style="text-decoration: none; color: #fff; ">
+                    Ver CV
+                </a>
+                <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilides Técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Secundario</h4>
+                        <span class="casa">Instituto González Catán</span>
+                        <span class="fecha">2018 - 2023</span>
+                        <p>Egresé del secundario en 2023 y desde entonces hasta hoy, me he dedicado a estudiar y
+                            mejorar mis habilidades en diseño web. Comencé el ingreso a la carrera de Ingeniería en
+                            Informática,
+                            combinando estudios académicos con proyectos prácticos, lo que me ha permitido crecer
+                            profesionalmente y prepararme para desafíos futuros en el campo tecnológico.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Cursos virtuales</h4>
+                        <span class="casa">Virtual Learning Academy</span>
+                        <span class="fecha">2022 - Presente</span>
+                        <p>Desde 2022 hasta ahora, estudio en la Virtual Learning Academy, especializándome en cursos de
+                            FrontEnd Developer. He aprendido HTML, CSS y JavaScript, desarrollando habilidades prácticas
+                            para crear interfaces web atractivas y funcionales.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Centro Educacional el Pregreso</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Trabajé de la mano del Centro Educacional el Progreso armando y diseñando una Web donde 
+                            pudiese ofrecer sus productos y mantener una lista actualizada semanalmente.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Puertas al Cielo</span>
+                        <span class="fecha">2024 - 2024</span>
+                        <p>Puertas al Cielo requería de una sitio web donde poder resolver dudas de sus clientes con la información
+                            necesaria para que puedan confiar plenamente en los tratamientos terapeuticos que brinda.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Puertas al Cielo</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Autos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Sencillo</h3>
+                        <p>Centro Educacional el Progreso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/juanpablo.campos.148"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/camposjuannn/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/juan-campos-733192276/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/qr/IN53FP4WAGTIF1"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
