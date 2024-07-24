@@ -273,10 +273,9 @@ p
 
     .contenedor {
         position: relative;
-        width: 80%;
+        width: 100%;
         max-width: 768px;
         background: #fff;
-        margin: 50px;
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
