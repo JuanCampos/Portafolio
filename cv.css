@@ -268,3 +268,16 @@ p
     height: 100%;
     background: rgb(136, 158, 165);
 }
+
+@media (min-width:400px) and (max-width:768px) {
+
+    .contenedor {
+        position: relative;
+        width: 80%;
+        max-width: 768px;
+        background: #fff;
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
