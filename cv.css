@@ -9,11 +9,58 @@
 
 body 
 {
-    background: rgb(136, 158, 165);
+    background-color: #1e2326;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+
+/* MENU */
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
 }
 
 .contenedor 
@@ -268,7 +315,7 @@ p
     height: 100%;
     background: rgb(136, 158, 165);
 }
-
+/*
 @media (min-width:400px) and (max-width:768px) {
 
     .contenedor {
@@ -278,5 +325,58 @@ p
         background: #fff;
         display: grid;
         grid-template-columns: 1fr 2fr;
+    }
+}*/
+
+/* Responsive: Tablet */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .ladoIzquierdo,
+    .ladoDerecho {
+        width: 100%;
+    }
+
+    .año_empresa {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .trabajo {
+        text-align: left;
+    }
+}
+
+/* Responsive: Celular */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .textoPerfil img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .titulo, .titulo2 {
+        font-size: 16px;
+    }
+
+    .ladoIzquierdo, .ladoDerecho {
+        padding: 15px;
+    }
+
+    .año_empresa {
+        flex-direction: column;
+    }
+
+    .text h4 {
+        font-size: 15px;
+    }
+
+    .text p {
+        font-size: 13px;
     }
 }
