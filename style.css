@@ -558,15 +558,6 @@ html{
     flex: 1 1 30rem;
     border-radius: .5rem;
 }
-
-.opiniones .caja-contenedor .caja .fa-atom{
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    font-size: 8rem;
-    color: #1CB698;
-    opacity: .3;
-}
 .opiniones .caja-contenedor .caja .user img{
     border-radius: 50%;
     object-fit: cover;
