@@ -707,9 +707,9 @@ html {
 }
 
 .opiniones .caja-contenedor .caja .user img {
-    object-fit: cover;
-    height: 40px;
-    width: 40px;
+    object-fit: contain;
+    height: 50px;
+    width: 50px;
     margin-top: 2rem;
 }
 
